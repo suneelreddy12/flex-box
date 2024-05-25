@@ -1,0 +1,26 @@
+.container {
+  display: flex; /* Establish flex container */
+  background-color: #f0f0f0; /* Background color for visibility */
+  padding: 20px; /* Padding inside the container */
+  border: 2px solid #000; /* Border for visibility */
+}
+
+.container {
+  flex-direction: row; /* Controls the direction in which the flex items are laid out (can have column, column-reverse, row-reverse)*/
+  flex-wrap: nowrap; /* Determines whether flex items should wrap onto multiple lines (With wrap, items will move to the next line
+   if there isn’t enough space on one line, can have wrap-reverse, nowrap ) */
+  flex-flow: row wrap; /* Combines the two properties into one for convenience (Sets the direction and wrapping behavior
+   simultaneously) */
+  justify-content: center; /* Controls the alignment of flex items along the main axis (Centering the items horizontally 
+    within the container) */
+  align-content: center; /* Controls the alignment of multiple lines within the flex container (Centers the lines vertically if there are multiple lines of
+    . flex items) */
+}
+
+.item {
+  background-color: #d32f2f; /* Background color for items */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding inside items */
+  margin: 10px; /* Margin outside items */
+  flex: 1 1 100px; /* Flex-grow, flex-shrink, and flex-basis */
+}
